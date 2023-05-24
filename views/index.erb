@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<main>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="<%= url('css/styles.css') %>" rel="stylesheet" type="text/css" />
+  <link href="<%= url('css/login.css') %>" rel="stylesheet" type="text/css" />
+  <script src="/js/index.js"></script>
+  <head>
+  <style>
+    /* Import the font */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Six+Caps&display=swap');
+    /* Set the font family for the body */
+    body {
+      font-family: 'Open Sans Condensed', sans-serif;
+    }
+    /* Set the font family for headings and other elements */
+    # h1, h2, h3, h4, h5, h6, p, a, button, input, label {
+    #   font-family: 'Six Caps', sans-serif;
+    # }
+  </style>
+</head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+      <h1>ebnb</h1>
+    </div>
+
+    <div class="sign-in">
+      <button class="open-button" onclick="openForm()">Sign In</button>
+      <div class="form-popup" id="myForm">
+        <form action="/login" method="POST" class="form-container">
+          <h1 id=login-text>Login</h1>
+
+          <input type="text" placeholder="Username" name="username" required>
+          <input type="password" placeholder="Password" name="password" required>
+
+          <button type="submit" class="btn">Login</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          <p>No Account? <a href="/signup">Sign-up here</a></p>
+        </form>
+      </div>
+    </div>
+  
+    <div class="new-space">
+      <a href="spaces/new">Bnb your home</a>
+    </div>
+  </div>
+
+  <div class="main-container">
+    <% @spaces.each do |space|%>
+      <div class="space-container">
+        <div class=space-img>
+          <p>img placeholder</p>
+        </div>
+
+        <div class="space-title">
+          <h2 class=title><%= space.title%></h2>
+        </div>
+
+        <div class="space-details">
+          <p class=description><%= space.title%></p>
+          <p class=address><%= space.address%></p>
+          <p class=available_dates>Available from: <%= space.available_dates[2,11]%> to: <%= space.available_dates[24,10]%></p>
+        </div>
+        <div class="space-price">
+          <p class=price><%= space.price%></p>
+        </div>
+      </div>
+    <%end%>
+  </div>
+</main>
+</body>
+
+</html>

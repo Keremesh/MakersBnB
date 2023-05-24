@@ -1,0 +1,119 @@
+/* Callum's code 2 paragraphs below
+/* .logo h1 {
+    color: #ff385c;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.08em;
+}
+  #new-space {
+    color: #ffffff;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+  } */
+
+  /* Experimenting
+  .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.sign-in {
+  margin-left: auto;
+}
+
+.open-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition:
+ */
+
+/* body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+} */
+
+.header {
+  display: flex;
+  /* flex_flow: row wrap; */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  height: 200px;
+  padding: 20px;
+}
+
+.logo {
+  /* font-size: 2em;
+  font-weight: bold; */
+  width: 100px;  /* Or whatever */
+  height: 100px; /* Or whatever */
+  margin: auto;
+display: block;
+}
+
+.new-space a { 
+  width: 100px;  /* Or whatever */
+  height: 100px; /* Or whatever */
+  margin: auto;
+  display: block;
+  /* padding-left: 800px; */
+
+}
+
+.sign-in button {
+  width: 100px;  /* Or whatever */
+  height: 100px; /* Or whatever */
+  /* margin: auto; */
+display: block;
+padding-left: 200px;
+margin-left: 200;
+
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.space-container {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+}
+.new-space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+.space-img {
+  height: 200px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+

@@ -1,0 +1,19 @@
+<html>
+  <form action="/spaces/new" method="POST" class="form-container">
+          <h1 id=new-space-form>ebnb your space</h1>
+
+          <input type="text" name="title" placeholder="Title" required>
+          <input type="text" name="description" placeholder="Description" required>
+          <input type="int" placeholder="Price" name="price" required>
+          <input type="text" placeholder="Address" name="address" required>
+
+          <input type="date" placeholder="date" name="start_date" required>
+           <input type="date" placeholder="date" name="end_date" required>
+
+          <input type="number" placeholder="User ID" name="user_id" required>
+          <%#NEED TO IMPLEMENT WITH JS?#%>
+
+            <button type="submit" class="btn">Publish</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</html> 
